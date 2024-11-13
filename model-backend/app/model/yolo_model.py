@@ -5,8 +5,9 @@ from ultralytics import YOLO
 
 # Tải model YOLOv8
 #model = torch.hub.load('ultralytics/yolov8', 'yolov8')
-model = YOLO('app/model/weights/yolo11n.pt')
+#model = YOLO('app/model/weights/yolo11n.pt')
 #model = YOLO("app/model/weights/yolo11n.onnx")
+model = YOLO("app/model/weights/yolov8n.pt")
 
 # Kiểm tra nếu CUDA khả dụng, nếu không thì dùng CPU
 device = 'cuda' if torch.cuda.is_available() else 'cpu'
